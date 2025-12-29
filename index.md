@@ -11,3 +11,6 @@ author_profile: false
 sidebar: false
 classes: wide
 ---
+<div class="hero-text">
+Welcome to our group!
+</div>
