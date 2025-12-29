@@ -1,43 +1,47 @@
-/* =========================================================
-   A) 全站：导航（air 皮肤适配：单层玻璃 + 清晰文字）
-   ========================================================= */
+/* ===========================
+   全站导航：真正半透明（去掉叠层）
+   =========================== */
 
-/* 只给 masthead 一层背景，避免“叠层发灰” */
+/* 让 masthead 本体成为唯一背景层 */
 .masthead {
-  background: rgba(255, 255, 255, 0.72) !important;  /* 0.65~0.80 可调 */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.55) !important; /* 0.45~0.65 自己调 */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: none !important;
   box-shadow: none !important;
 
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   z-index: 9999;
 }
 
-/* masthead 内部所有层强制透明（关键） */
+/* 关键：把 masthead 内部所有“可能叠加的白底”全部透明 */
 .masthead__inner-wrap,
+.masthead__menu,
 .greedy-nav,
+.greedy-nav__toggle,
+.greedy-nav .visible-links,
+.greedy-nav .hidden-links,
 .greedy-nav ul,
 .greedy-nav li,
 .greedy-nav a {
   background: transparent !important;
+  box-shadow: none !important;
 }
 
-/* air 下导航链接颜色 */
-.greedy-nav a {
+/* air 下导航文字颜色 */
+.greedy-nav a,
+.masthead__menu-item a {
   color: rgba(0, 0, 0, 0.78) !important;
 }
-.greedy-nav a:hover {
+.greedy-nav a:hover,
+.masthead__menu-item a:hover {
   color: rgba(0, 0, 0, 0.95) !important;
 }
 
-/* 防止主题给导航预留高度造成“暗带/空带” */
-body {
-  padding-top: 0 !important;
-}
+/* 防止主题预留导航高度造成“假白条/暗条” */
+body { padding-top: 0 !important; }
+
 
 
 /* =========================================================
@@ -155,3 +159,36 @@ body {
     align-items: flex-start;
   }
 }
+/* ===========================
+   People 页：Hero 标题居中 + 字体统一为首页
+   =========================== */
+
+/* 让 People 页 hero 内容区垂直/水平居中 */
+.people .page__hero--overlay .wrapper {
+  min-height: 65vh;               /* 跟你 people hero 高度一致 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* People 标题样式完全对齐首页 Welcome */
+.people .page__hero--overlay .page__title {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: clamp(3.2rem, 5vw, 4.8rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-shadow: 0 4px 16px rgba(0,0,0,0.45);
+}
+
+/* 如果 People 页还有 lead/excerpt，给点间距 */
+.people .page__hero--overlay .page__lead {
+  margin-top: 0.8rem;
+}
+
+
