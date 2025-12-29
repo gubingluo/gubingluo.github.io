@@ -87,11 +87,9 @@ body {
 }
 
 .people .page__hero--overlay {
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
   background-position: center center !important;
-  background-color: #111 !important; /* 留白处用深色填充 */
 }
+
 /* 只影响 People 页横幅高度 */
 .people .page__hero--overlay {
   height: 65vh;
