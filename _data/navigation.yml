@@ -4,6 +4,8 @@ main:
     url: /bio/
   - title: "People"
     url: /people/
+  - title: "Publications"
+    url: /publications/
   - title: "Work with Us"
     url: /work-with-us/
   # - title: "Sample Posts"
