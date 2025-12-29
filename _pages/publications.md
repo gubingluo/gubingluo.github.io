@@ -6,7 +6,7 @@ classes: publications
 author_profile: false
 sidebar: false
 header:
-  overlay_image: /assets/images/pub-banner.jpg
+  overlay_image: /assets/images/pub.jpg
   overlay_filter: rgba(0, 0, 0, 0.35)
   caption: ""
 ---
