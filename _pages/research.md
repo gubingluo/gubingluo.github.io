@@ -2,7 +2,7 @@
 title: "Research"
 permalink: /research/
 layout: single
-classes: wide research
+classes: research
 author_profile: false
 sidebar: false
 header:
