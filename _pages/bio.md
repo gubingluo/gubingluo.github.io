@@ -1,4 +1,4 @@
----
+------
 title: "Bio"
 permalink: /bio/
 layout: single
@@ -9,40 +9,41 @@ sidebar: false
 
 <div class="bio-card">
 
-<img src="/assets/images/gu.jpg" alt="Bingluo Gu" class="bio-avatar">
+  <img src="/assets/images/gu.jpg" alt="Bingluo Gu" class="bio-avatar" />
 
-<div class="bio-info">
+  <div class="bio-info">
+    <h2>Bingluo Gu</h2>
 
-## Bingluo Gu
+    <p><strong>Associate Professor</strong><br/>
+    Department of Geophysics<br/>
+    China University of Petroleum (East China)</p>
 
-**Associate Professor**  
-Department of Geophysics  
-China University of Petroleum (East China)
+    <p>📍 Qingdao, China<br/>
+    📧 <a href="mailto:gubingluo@foxmail.com">gubingluo@foxmail.com</a><br/>
+    📞 +86-131-5329-3679<br/>
+    🔗 <a href="https://www.researchgate.net/profile/Bingluo-Gu" target="_blank" rel="noopener">ResearchGate</a></p>
 
-📍 Qingdao, China  
-📧 [gubingluo@foxmail.com](mailto:gubingluo@foxmail.com)  
-📞 +86-131-5329-3679  
-🔗 [ResearchGate](https://www.researchgate.net/profile/Bingluo-Gu)
+    <hr/>
 
----
+    <h3>Research Interests</h3>
+    <ul>
+      <li>Seismic wave propagation</li>
+      <li>Seismic imaging theory and methods</li>
+      <li>Viscoacoustic and elastic wave modeling</li>
+      <li>Reverse time migration (RTM) and least-squares imaging</li>
+      <li>Machine learning for seismic data processing</li>
+    </ul>
 
-### Research Interests
-- Seismic wave propagation  
-- Seismic imaging theory and methods  
-- Viscoacoustic and elastic wave modeling  
-- Reverse time migration (RTM) and least-squares imaging  
-- Machine learning for seismic data processing  
+    <h3>Courses</h3>
+    <ul>
+      <li>C Programming Language</li>
+      <li>Introduction to Geophysical Exploration</li>
+    </ul>
 
-### Courses
-- C Programming Language  
-- Introduction to Geophysical Exploration  
-
+  </div>
 </div>
-</div>
 
----
-
----
+<hr/>
 
 ## Research Projects
 
@@ -54,10 +55,11 @@ China University of Petroleum (East China)
   *Least-squares RTM imaging for multicomponent seismic data*  
   **Principal Investigator**
 
----
+<hr/>
 
 ## Contact
 
 If you are interested in collaboration or student supervision, please feel free to contact me via email.
 
 📧 **gubingluo@foxmail.com**
+
