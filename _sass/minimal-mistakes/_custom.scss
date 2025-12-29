@@ -442,23 +442,30 @@ body { padding-top: 0 !important; }
   text-shadow: 0 4px 16px rgba(0,0,0,0.45);
 }
 
+
+
+
 /* ===========================
-   Research 页：正文更宽（减少两侧留白）
+   Research 页：正文真正铺开（解决左侧大留白）
    =========================== */
 
-/* 让正文内容区更宽：从默认窄版心改为大版心 */
-.research .page__content,
-.research .page__inner-wrap {
-  max-width: 1400px;     /* 你想更宽可改 1300/1400 */
-  width: min(92vw, 1400px);
-  margin-left: auto;
-  margin-right: auto;
+/* 让主容器别再按“窄版心/侧栏版式”计算 */
+.wide.research #main {
+  max-width: none !important;
 }
 
-/* 进一步减少左右 padding（主题可能给了较大内边距） */
-.research .page__content {
-  padding-left: 1rem;
-  padding-right: 1rem;
+/* 内容区更宽 + 居中（你可调 1200/1300/1400） */
+.wide.research .page__inner-wrap,
+.wide.research .page__content {
+  max-width: 1300px !important;
+  width: min(94vw, 1300px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* 防止某些情况下 float/布局把内容推歪 */
+.wide.research .page__content {
+  float: none !important;
 }
 
 
