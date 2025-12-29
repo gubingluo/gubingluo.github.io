@@ -71,3 +71,17 @@ body {
   font-size: 1.05rem;
   line-height: 1.8;
 }
+@keyframes tighten {
+  from {
+    letter-spacing: 0.25em;
+    opacity: 0;
+  }
+  to {
+    letter-spacing: 0.08em;
+    opacity: 1;
+  }
+}
+
+.page__hero--overlay .page__title {
+  animation: tighten 1.4s ease-out both;
+}
