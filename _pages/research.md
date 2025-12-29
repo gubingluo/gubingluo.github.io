@@ -2,7 +2,7 @@
 title: "Research"
 permalink: /research/
 layout: single
-classes: research
+classes: wide research
 header:
   overlay_image: /assets/images/research-banner.jpg
   overlay_filter: rgba(0, 0, 0, 0.35)
