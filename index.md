@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-title: "Prof.Gu's Geophysicist group"
+title: "Gu, B.L"
 excerpt: "Welcome to promote and provide criticism and suggestions"
 header:
   overlay_image: /assets/background.jpg
