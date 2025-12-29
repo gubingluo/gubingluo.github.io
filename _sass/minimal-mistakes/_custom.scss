@@ -48,3 +48,23 @@
 .page__hero--overlay .page__lead {
   margin: 0;
 }
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav,
+.greedy-nav a,
+.greedy-nav .visible-links,
+.greedy-nav .hidden-links {
+  background: rgba(0, 0, 0, 0.25) !important;
+}
+
+.masthead {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* 下拉菜单背景也半透明（如果你有更多菜单项） */
+.greedy-nav .hidden-links {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
