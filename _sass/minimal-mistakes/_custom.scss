@@ -92,3 +92,8 @@ body {
   background-position: center center !important;
   background-color: #111 !important; /* 留白处用深色填充 */
 }
+.page__hero--overlay {
+  height: 65vh;
+  min-height: 420px;   /* 防止小屏太矮 */
+  max-height: 720px;   /* 防止大屏太高 */
+}
