@@ -40,27 +40,31 @@
 }
 
 /* ===== 2) 导航：半透明 + 磨砂 + 浮在背景图上 ===== */
-.masthead,
-.masthead__inner-wrap,
-.greedy-nav {
-  background: rgba(0, 0, 0, 0.18) !important;
-}
-
 .masthead {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: none !important;
-  box-shadow: none !important;
-
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
   z-index: 9999;
+
+  background: rgba(0, 0, 0, 0.32) !important; /* 你可以调 0.25~0.35 */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
-/* 防止主题给 masthead 预留高度导致出现“假暗带” */
+/* 2. 内层全部强制透明（关键） */
+.masthead__inner-wrap,
+.greedy-nav,
+.greedy-nav ul,
+.greedy-nav li,
+.greedy-nav a {
+  background: transparent !important;
+}
+
+/* 3. 防止主题给导航预留高度 */
 body {
   padding-top: 0 !important;
 }
