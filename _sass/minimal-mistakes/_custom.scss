@@ -28,3 +28,23 @@
 .page__hero--overlay {
   min-height: 100vh;
 }
+.page__hero--overlay {
+  min-height: 100vh;
+}
+
+.page__hero--overlay .wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 控制标题和欢迎语间距 */
+.page__hero--overlay .page__title {
+  margin: 0 0 0.8rem 0;
+}
+
+.page__hero--overlay .page__lead {
+  margin: 0;
+}
