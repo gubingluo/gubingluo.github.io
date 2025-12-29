@@ -236,4 +236,55 @@ body { padding-top: 0 !important; }
   text-shadow: 0 4px 16px rgba(0,0,0,0.45);
 }
 
+/* ===========================
+   Bio 页：导师左图右文
+   =========================== */
+
+.bio .bio-card {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+/* 导师头像 */
+.bio .bio-avatar {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* 右侧文字区 */
+.bio .bio-info {
+  max-width: 700px;
+}
+
+/* 名字更突出 */
+.bio .bio-info h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+/* 联系方式行距 */
+.bio .bio-info p {
+  margin: 0.25rem 0;
+}
+
+/* 移动端自动改为上下布局 */
+@media (max-width: 900px) {
+  .bio .bio-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bio .bio-info {
+    max-width: 100%;
+  }
+}
+
 
