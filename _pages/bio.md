@@ -22,14 +22,8 @@ sidebar: false
       📍 Qingdao, China<br/>
       📧 <a href="mailto:gubingluo@foxmail.com">gubingluo@foxmail.com</a><br/>
       📞 +86-131-5329-3679<br/>
-      🔗 <a href="https://www.researchgate.net/profile/Bingluo-Gu" target="_blank" rel="noopener">ResearchGate</a>
+      🔗 <a href="https://www.researchgate.net/profile/Bingluo-Gu" target="_blank">ResearchGate</a>
     </p>
-
-    <h3>Courses</h3>
-    <ul>
-      <li>C Programming Language</li>
-      <li>Introduction to Geophysical Exploration</li>
-    </ul>
 
   </div>
 </div>
@@ -37,9 +31,7 @@ sidebar: false
 <hr/>
 
 <div class="bio-section">
-
 <h2>Research Interests</h2>
-
 <ul>
   <li>Seismic wave propagation</li>
   <li>Seismic imaging theory and methods</li>
@@ -47,15 +39,22 @@ sidebar: false
   <li>Reverse time migration (RTM) and least-squares imaging</li>
   <li>Machine learning for seismic data processing</li>
 </ul>
-
 </div>
 
 <hr/>
 
 <div class="bio-section">
+<h2>Courses</h2>
+<ul>
+  <li>C Programming Language</li>
+  <li>Introduction to Geophysical Exploration</li>
+</ul>
+</div>
 
+<hr/>
+
+<div class="bio-section">
 <h2>Research Projects</h2>
-
 <ul>
   <li><strong>National Natural Science Foundation of China</strong><br/>
       <em>Elastic wave inverse time-migration imaging based on GAN deep learning technology</em><br/>
@@ -66,17 +65,11 @@ sidebar: false
       Principal Investigator
   </li>
 </ul>
-
 </div>
 
 <hr/>
 
 <div class="bio-section">
-
 <h2>Contact</h2>
-
-<p>If you are interested in collaboration or student supervision, please feel free to contact me via email.</p>
-
 <p>📧 <strong>gubingluo@foxmail.com</strong></p>
-
 </div>
