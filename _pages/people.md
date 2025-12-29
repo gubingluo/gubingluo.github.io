@@ -13,7 +13,7 @@ header:
 ## PhD & Postgraduate students
 
 <div class="people-card">
-  <img src="/assets/images/people/jzy.jpg" alt="Zhenyu Jiang">
+  <img src="/assets/images/jzy.jpg" alt="Zhenyu Jiang">
   <div class="people-info">
     <h3>Zhenyu Jiang</h3>
     <p>
