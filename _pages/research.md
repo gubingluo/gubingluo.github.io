@@ -2,14 +2,13 @@
 title: "Research"
 permalink: /research/
 layout: single
-classes: wide research
-author_profile: false
-sidebar: false
+classes: research
 header:
-  overlay_image: /assets/images/research-banner.jpg 
+  overlay_image: /assets/images/research-banner.jpg
   overlay_filter: rgba(0, 0, 0, 0.35)
   caption: ""
 ---
+
 
 <div class="research-section">
 
