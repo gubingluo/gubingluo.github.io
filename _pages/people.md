@@ -8,8 +8,6 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.35)
   caption: ""
 ---
-
-
 ## PhD & Postgraduate students
 
 <div class="people-card">
