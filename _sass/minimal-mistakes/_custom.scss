@@ -1,45 +1,58 @@
 /* ===========================
-   全站导航：真正半透明（去掉叠层）
+   全站导航：真正玻璃半透明（强制清掉伪元素叠层）
    =========================== */
 
-/* 让 masthead 本体成为唯一背景层 */
+/* 只留 masthead 一层玻璃背景 */
 .masthead {
-  background: rgba(255, 255, 255, 0.55) !important; /* 0.45~0.65 自己调 */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.28) !important;   /* 0.18~0.35 调透明度 */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: none !important;
   box-shadow: none !important;
 
   position: absolute;
   top: 0; left: 0; right: 0;
+  width: 100%;
   z-index: 9999;
 }
 
-/* 关键：把 masthead 内部所有“可能叠加的白底”全部透明 */
+/* 🔥关键：Minimal Mistakes 可能用伪元素再盖一层底色，必须干掉 */
+.masthead::before,
+.masthead::after,
+.masthead__inner-wrap::before,
+.masthead__inner-wrap::after,
+.greedy-nav::before,
+.greedy-nav::after {
+  background: transparent !important;
+  box-shadow: none !important;
+  content: none !important;
+}
+
+/* masthead 内所有子层透明，避免“多层叠加”变成实心 */
 .masthead__inner-wrap,
 .masthead__menu,
 .greedy-nav,
-.greedy-nav__toggle,
 .greedy-nav .visible-links,
 .greedy-nav .hidden-links,
 .greedy-nav ul,
 .greedy-nav li,
-.greedy-nav a {
+.greedy-nav a,
+.greedy-nav__toggle {
   background: transparent !important;
   box-shadow: none !important;
 }
 
-/* air 下导航文字颜色 */
+/* 导航文字：配黑玻璃用白字更清晰 */
 .greedy-nav a,
 .masthead__menu-item a {
-  color: rgba(0, 0, 0, 0.78) !important;
+  color: rgba(255, 255, 255, 0.90) !important;
 }
 .greedy-nav a:hover,
 .masthead__menu-item a:hover {
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
-/* 防止主题预留导航高度造成“假白条/暗条” */
+/* 防止主题预留高度造成顶部“假色带” */
 body { padding-top: 0 !important; }
 
 
