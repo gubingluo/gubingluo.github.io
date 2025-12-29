@@ -40,28 +40,33 @@
 }
 
 /* ===== 2) 导航：半透明 + 磨砂 + 浮在背景图上 ===== */
+/* 只给 masthead 背景，其他层透明 */
 .masthead {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-
-  background: rgba(0, 0, 0, 0.32) !important; /* 你可以调 0.25~0.35 */
+  background: rgba(255, 255, 255, 0.70) !important;  /* air：用浅色玻璃 */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
   border-bottom: none !important;
   box-shadow: none !important;
+
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 9999;
 }
 
-/* 2. 内层全部强制透明（关键） */
 .masthead__inner-wrap,
 .greedy-nav,
 .greedy-nav ul,
 .greedy-nav li,
 .greedy-nav a {
   background: transparent !important;
+}
+
+/* 导航链接颜色（air 下变清晰） */
+.greedy-nav a {
+  color: rgba(0,0,0,0.78) !important;
+}
+.greedy-nav a:hover {
+  color: rgba(0,0,0,0.95) !important;
 }
 
 /* 3. 防止主题给导航预留高度 */
@@ -122,8 +127,8 @@ body {
 }
 
 .people-info p {
-  margin: 0;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.85);
+  color: inherit;
+  opacity: 0.85;
 }
+
 
