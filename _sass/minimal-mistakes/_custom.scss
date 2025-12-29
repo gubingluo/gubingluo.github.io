@@ -101,3 +101,29 @@ body {
   max-height: 720px;
 }
 
+.people-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.people-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.people-info h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.25rem;
+}
+
+.people-info p {
+  margin: 0;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
