@@ -1,4 +1,4 @@
-------
+---
 title: "Bio"
 permalink: /bio/
 layout: single
