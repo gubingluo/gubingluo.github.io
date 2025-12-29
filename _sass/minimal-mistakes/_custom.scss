@@ -85,3 +85,10 @@ body {
 .page__hero--overlay .page__title {
   animation: tighten 1.4s ease-out both;
 }
+
+.page__hero--overlay {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-color: #111 !important; /* 留白处用深色填充 */
+}
