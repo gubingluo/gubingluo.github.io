@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Research"
+    url: /research/
   - title: "Bio"
     url: /bio/
   - title: "People"
@@ -8,6 +10,8 @@ main:
     url: /publications/
   - title: "Work with Us"
     url: /work-with-us/
+ 
+
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
