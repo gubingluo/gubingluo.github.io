@@ -3,7 +3,7 @@ title: "People"
 permalink: /people/
 layout: single
 classes: people
-cheader:
+header:
   overlay_image: /assets/images/people-banner.jpg
   overlay_filter: rgba(0, 0, 0, 0.35)
   caption: ""
