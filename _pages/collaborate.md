@@ -1,7 +1,12 @@
 ---
 title: "Work with Us"
+permalink: /work-with-us/
 layout: single
-permalink: /collaborate/
+classes: work
+header:
+  overlay_image: /assets/images/work-banner.jpg
+  overlay_filter: rgba(0, 0, 0, 0.35)
+  caption: ""
 ---
 
 
