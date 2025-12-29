@@ -13,17 +13,6 @@
 }
 
 
-/* ===== 半透明导航栏 ===== */
-.masthead {
-  background: rgba(0, 0, 0, 0.35) !important;
-  backdrop-filter: blur(6px);
-  border-bottom: none;
-}
-
-.masthead__inner-wrap {
-  max-width: 100%;
-}
-
 /* ===== 全屏背景 ===== */
 .page__hero--overlay {
   min-height: 100vh;
@@ -48,23 +37,33 @@
 .page__hero--overlay .page__lead {
   margin: 0;
 }
-.masthead,
-.masthead__inner-wrap,
-.greedy-nav,
-.greedy-nav a,
-.greedy-nav .visible-links,
-.greedy-nav .hidden-links {
-  background: rgba(0, 0, 0, 0.25) !important;
-}
-
-.masthead {
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-bottom: none !important;
+.page__hero--overlay .wrapper {
+  background: transparent !important;
   box-shadow: none !important;
 }
 
-/* 下拉菜单背景也半透明（如果你有更多菜单项） */
-.greedy-nav .hidden-links {
-  background: rgba(0, 0, 0, 0.6) !important;
+/* 有些版本会给 hero 内容一个半透明底，直接清掉 */
+.page__hero--overlay .page__hero-caption,
+.page__hero--overlay .page__hero-body,
+.page__hero--overlay .page__inner-wrap {
+  background: transparent !important;
 }
+
+/* ===== 导航真正半透明 + 浮在图上 ===== */
+.masthead {
+  background: rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: none !important;
+  box-shadow: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+body {
+  padding-top: 0 !important; /* 防止 masthead 占位挤出一条“暗带” */
+}
+
