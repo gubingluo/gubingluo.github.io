@@ -2,13 +2,14 @@
 layout: splash
 permalink: /
 title: "Welcome To Us"
+classes: home
 
 header:
   overlay_image: /assets/background.jpg
   overlay_filter: rgba(0, 0, 0, 0.45)
+
 author_profile: false
 sidebar: false
-classes: wide
 ---
 ## About the Group
 
