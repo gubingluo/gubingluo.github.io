@@ -1,14 +1,11 @@
 ---
 layout: splash
 permalink: /
-title: ""
+title: "Prof.Gu's Geophysicist group"
+excerpt: "Welcome to promote and provide criticism and suggestions"
 header:
   overlay_image: /assets/background.jpg
   overlay_filter: rgba(0, 0, 0, 0.45)
-  overlay_excerpt: >
-    <div class="hero-text">
-      Welcome to promote and provide criticism and suggestions
-    </div>
 author_profile: false
 sidebar: false
 classes: wide
