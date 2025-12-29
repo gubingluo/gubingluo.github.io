@@ -19,10 +19,10 @@ locale                   : "zh-CN"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Prof.Gu's Geophysicist group"
 title_separator          : "-"
-subtitle                 : "Welcome to promote and provide criticism and suggestions" # site tagline that appears below site title in masthead
+
 name                     : "Used to show our work progress"
 description              : "Includes profiles and work achievements of each member."
-url                      : "https://gu-group.github.io"
+url                      : "https://gubingluo.github.io"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
