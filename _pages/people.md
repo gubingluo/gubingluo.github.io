@@ -2,7 +2,8 @@
 title: "People"
 permalink: /people/
 layout: single
-header:
+classes: people
+cheader:
   overlay_image: /assets/images/people-banner.jpg
   overlay_filter: rgba(0, 0, 0, 0.35)
   caption: ""
