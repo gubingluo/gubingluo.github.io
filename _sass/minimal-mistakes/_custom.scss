@@ -99,20 +99,3 @@ body {
   max-height: 720px;
 }
 
-.masthead {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-
-  background: rgba(0, 0, 0, 0.35) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
-body {
-  padding-top: 0 !important;
-}
-
