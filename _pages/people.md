@@ -12,13 +12,16 @@ header:
 
 ## PhD & Postgraduate students
 
-
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="/assets/images/people/jzy.jpg" alt="Zhenyu Jiang" style="width:100px; height:100px; border-radius:50%; margin-right:20px;">
-  <div>
-    <strong>Zhenyu Jiang</strong><br>
-    First-year graduate student, research direction is seismic data denoising and super-resolution.
+<div class="people-card">
+  <img src="/assets/images/people/jzy.jpg" alt="Zhenyu Jiang">
+  <div class="people-info">
+    <h3>Zhenyu Jiang</h3>
+    <p>
+      First-year graduate student. Research direction includes seismic data
+      denoising and super-resolution.
+    </p>
   </div>
 </div>
+
 
 ## Other Personnel
