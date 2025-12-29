@@ -1,0 +1,24 @@
+.hero-text {
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  margin-top: 35vh;
+  letter-spacing: 1px;
+}
+
+/* ===== 半透明导航栏 ===== */
+.masthead {
+  background: rgba(0, 0, 0, 0.35) !important;
+  backdrop-filter: blur(6px);
+  border-bottom: none;
+}
+
+.masthead__inner-wrap {
+  max-width: 100%;
+}
+
+/* ===== 全屏背景 ===== */
+.page__hero--overlay {
+  min-height: 100vh;
+}
