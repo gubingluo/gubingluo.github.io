@@ -287,4 +287,66 @@ body { padding-top: 0 !important; }
   }
 }
 
+.publications .pub-item{
+  padding: 1.2rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.publications .pub-title{
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.publications .pub-authors{
+  opacity: 0.85;
+  margin-top: 0.25rem;
+}
+
+.publications .pub-venue{
+  opacity: 0.85;
+  margin-top: 0.15rem;
+}
+
+.publications .pub-links{
+  margin-top: 0.45rem;
+  font-size: 0.98rem;
+}
+
+.publications .pub-links a{
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+.publications .pub-links a:hover{
+  border-bottom-color: rgba(0,0,0,0.7);
+}
+.publications .pub-links .dot{
+  opacity: 0.4;
+  margin: 0 0.5rem;
+}
+
+/* 横幅高度和其他页统一（可选） */
+.publications .page__hero--overlay{
+  height: 65vh;
+  min-height: 420px;
+  max-height: 720px;
+  background-position: center top !important;
+  background-size: cover !important;
+}
+.publications .page__hero--overlay .wrapper{
+  min-height: 65vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.publications .page__hero--overlay .page__title{
+  font-family: "Playfair Display","Times New Roman",serif;
+  font-size: clamp(3.2rem, 5vw, 4.8rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-shadow: 0 4px 16px rgba(0,0,0,0.45);
+}
+
 
