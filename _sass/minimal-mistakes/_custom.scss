@@ -404,4 +404,61 @@ body { padding-top: 0 !important; }
   }
 }
 
+/* ===========================
+   Research 页：横幅 2/3 + 标题统一（只影响 Research）
+   需要 research.md 有 classes: research
+   =========================== */
+
+/* 横幅高度和 People/Work 统一：约 2/3 屏 */
+.research .page__hero--overlay {
+  height: 65vh;
+  min-height: 420px;
+  max-height: 720px;
+
+  background-position: center top !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* 标题居中 + 字体字号与首页 Welcome 统一 */
+.research .page__hero--overlay .wrapper {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.research .page__hero--overlay .page__title {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: clamp(3.2rem, 5vw, 4.8rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-shadow: 0 4px 16px rgba(0,0,0,0.45);
+}
+
+/* ===========================
+   Research 页：正文更宽（减少两侧留白）
+   =========================== */
+
+/* 让正文内容区更宽：从默认窄版心改为大版心 */
+.research .page__content,
+.research .page__inner-wrap {
+  max-width: 1400px;     /* 你想更宽可改 1300/1400 */
+  width: min(92vw, 1400px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 进一步减少左右 padding（主题可能给了较大内边距） */
+.research .page__content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 
