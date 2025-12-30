@@ -508,4 +508,37 @@ body { padding-top: 0 !important; }
   margin-top: 0.8rem;
 }
 
+/* =========================================
+   让 Bio/People/Research/Publications/Work
+   的横幅标题，都用首页 Welcome 的动态效果
+   ========================================= */
+
+/* 动画本体：和你首页一致 */
+@keyframes tighten {
+  from {
+    letter-spacing: 0.25em;
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    letter-spacing: 0.08em;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 只对这几个页面生效（不影响其它页面） */
+.bio .page__hero--overlay .page__title,
+.people .page__hero--overlay .page__title,
+.research .page__hero--overlay .page__title,
+.publications .page__hero--overlay .page__title,
+.work .page__hero--overlay .page__title {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-shadow: 0 4px 16px rgba(0,0,0,0.45);
+
+  animation: tighten 1.2s ease-out both;
+}
+
 
