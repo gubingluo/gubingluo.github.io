@@ -5,7 +5,12 @@ layout: single
 classes: bio
 author_profile: false
 sidebar: false
+header:
+  overlay_image: /assets/images/bio-banner.jpg
+  overlay_filter: rgba(0, 0, 0, 0.35)
+  caption: ""
 ---
+
 
 <div class="bio-card">
 
